@@ -12,3 +12,8 @@ def assign_rooms(speakers)
   speakers.each_with_index { |name, num| assignments << "Hello, #{name}! You'll be assigned to room #{num}!" }
   assignments
 end
+
+def printer(badge_array, rooms_array)
+  badge_array.each { |badge| puts badge }
+  rooms_array.each { |room| puts room }
+end
